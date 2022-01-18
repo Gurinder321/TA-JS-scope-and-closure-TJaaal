@@ -15,7 +15,7 @@ let hundred = square(10);
 console.log(hundred);
 ```
 
-Create the execution context diagram of the following code line by line.
+Create the execution context diagram of the following code line by line.fd
 
 ```js
 var num = 21;
