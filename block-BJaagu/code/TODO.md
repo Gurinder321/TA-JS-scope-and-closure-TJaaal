@@ -6,6 +6,8 @@ var numA = 21,
   numB = 30;
 ```
 
+NaN - because numB hasn't been declared
+
 Find the output of the code snippets below:
 
 ```js
@@ -14,6 +16,8 @@ let numA = 21,
   numB = 30;
 ```
 
+ReferenceError. numA hasn't been defined
+
 Find the output of the code snippets below:
 
 ```js
@@ -21,6 +25,9 @@ let numA = 21,
   numB = 30;
 console.log(numA + numB); //OUTPUT
 ```
+
+51
+How??
 
 Find the output of the code snippets below:
 
@@ -34,6 +41,9 @@ function sayHello() {
 }
 ```
 
+First console log will be undefined
+???
+
 Find the output of the code snippets below:
 
 ```js
@@ -44,6 +54,8 @@ function sayHello() {
 }
 ```
 
+Make sense. Username gets stored at "tyrion" 2. function gets executed 3. The function runs are the block code get executed
+
 Find the output of the code snippets below:
 
 ```js
@@ -64,6 +76,9 @@ let sayHello = () => {
 };
 ```
 
+ReferenceError: username in not defined.
+The sayHello() function runs and executed the the code block and username has been defined
+
 Find the output of the code snippets below:
 
 ```js
@@ -74,6 +89,8 @@ let sayHello = () => {
 };
 ```
 
+sayHello is not defined
+
 Find the output of the code snippets below:
 
 ```js
@@ -83,6 +100,7 @@ let sayHello = () => {
   console.log(username);
 };
 ```
+sayHello is not defined
 
 Find the output of the code snippets below:
 
@@ -93,6 +111,7 @@ let sayHello = () => {
   console.log(username);
 };
 ```
+sayHello is not defined
 
 Find the output of the code snippets below:
 
@@ -104,6 +123,7 @@ let sayHello = () => {
 };
 sayHello(); // OUTPUT
 ```
+undefined
 
 Find the output of the code snippets below:
 
@@ -115,6 +135,8 @@ let sayHello = () => {
 };
 sayHello(); // OUTPUT
 ```
+
+John
 
 Find the output of the code snippets below:
 
@@ -126,3 +148,4 @@ let sayHello = () => {
 };
 sayHello(); // OUTPUT
 ```
+ReferenceError: Cannot access 'username' before initialization
