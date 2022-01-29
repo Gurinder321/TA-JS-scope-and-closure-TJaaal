@@ -1,6 +1,13 @@
 1. Create a function by your choice that accepts a callback function.
 
+function addTwoNums(cb, num) {
+  return sum + 2
+}
+
 2. Create a function by you choice that returns a function reference.
+function addThreeNums(num1, num2) {
+  return cb
+}
 
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
