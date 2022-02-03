@@ -13,7 +13,7 @@ let getSum = outer();
 let num = getSum();
 ```
 
-2.
+fgf 2.
 
 Create the execution context diagram for following code. Also write the output of the code below.
 
@@ -43,8 +43,8 @@ function makeColorChanger(color) {
   };
 }
 
-let blue = makeColorChanger('blue');
-let tomato = makeColorChanger('tomato');
+let blue = makeColorChanger("blue");
+let tomato = makeColorChanger("tomato");
 
 blue();
 tomato();
