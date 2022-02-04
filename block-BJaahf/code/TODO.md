@@ -13,7 +13,7 @@
 function loop() {
   // Your code goes here
 }
-
+v;
 loop(
   3,
   (n) => n > 0,
@@ -46,13 +46,7 @@ reduce(nums, add, 0); //-> 8
 function intersection(arrays) {}
 
 // Test
-console.log(
-  intersection(
-    [5, 10, 15, 20],
-    [15, 88, 1, 5, 7],
-    [1, 10, 15, 5, 20]
-  )
-); // should log: [5, 15]
+console.log(intersection([5, 10, 15, 20], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20])); // should log: [5, 15]
 ```
 
 4. Construct a function `union` that compares input arrays and returns a new array that contains all elements. If there are duplicate elements, only add it once to the new array. Preserve the order of the elements starting from the first element of the first input array.
@@ -61,8 +55,6 @@ console.log(
 function union(arrays) {}
 
 // Test
-console.log(
-  union([5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5])
-);
+console.log(union([5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]));
 // should log: [5, 10, 15, 88, 1, 7, 100]
 ```
