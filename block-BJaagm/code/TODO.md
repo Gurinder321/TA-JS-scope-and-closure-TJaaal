@@ -44,7 +44,7 @@ var userMsg = sayHello(user);
 
 <!-- Put your image here -->
 
-![](./image-1.png)
+![](./img/image-1.png)
 
 ```js
 var marks = 400;
@@ -60,7 +60,7 @@ var percentageProfit = getPercentage(400, 200);
 
 <!-- Put your image here -->
 
-![](./image-2.png)
+![](./img/image-2.png)
 
 ```js
 var age = 21;
@@ -79,4 +79,4 @@ var whoAmIAgain = customerMessage(12);
 
 <!-- Put your image here -->
 
-![](./image-3.png)
+![](./img/image-3.png)
