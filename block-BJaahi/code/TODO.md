@@ -177,10 +177,12 @@ nextMessage = sayHello('Test');
 5.
 
 ```js
+var name = undefined;
+let age;
 console.log(name);
 console.log(age);
-var name = "Lydia";
-let age = 21;
+name = "Lydia";
+age = 21;
 ```
 
 <!-- Answer -->
@@ -195,10 +197,12 @@ Won't work
 
 ```js
 function sayHi(name) {
+  var name = undefined;
+  let age;
   console.log(name);
   console.log(age);
-  var name = "Lydia";
-  let age = 21;
+  name = "Lydia";
+  age = 21;
 }
 
 sayHi();
@@ -215,13 +219,15 @@ Undefined
 7.
 
 ```js
-sayHi();
 function sayHi(name) {
+  var name = undefined;
+  let age;
   console.log(name);
   console.log(age);
-  var name = "Lydia";
-  let age = 21;
+  name = "Lydia";
+  age = 21;
 }
+sayHi();
 ```
 
 <!-- Answer -->
@@ -236,8 +242,9 @@ Cannot access 'age' before initialization
 8.
 
 ```js
+let sayHi;
 sayHi();
-let sayHi = function sayHi(name) {
+sayHi = function sayHi(name) {
   console.log(name);
   console.log(age);
   var name = "Lydia";
@@ -256,10 +263,13 @@ sayHi is not defined
 9.
 
 ```js
-let num1 = 21;
+let num1;
+var sum = undefined;
+let num2;
+num1 = 21;
 console.log(sum);
-var sum = num1 + num2;
-let num2 = 30;
+sum = num1 + num2;
+num2 = 30;
 ```
 
 <!-- Answer -->
@@ -274,19 +284,23 @@ num2 is not defined
 10.
 
 ```js
-var num1 = 21;
-
-let sum2 = addAgain(num1, num2, 4, 5, 6);
-
-let add = (a, b, c, d, e) => {
-  return a + b + c + d + e;
-};
+var num1 = undefined;
+let sum2;
+num1 = 21;
+let add;
+let num2;
+let sum;
 function addAgian(a, b) {
   return a + b;
 }
-let num2 = 200;
 
-let sum = add(num1, num2, 4, 5, 6);
+sum2 = addAgain(num1, num2, 4, 5, 6);
+add = (a, b, c, d, e) => {
+  return a + b + c + d + e;
+};
+num2 = 200;
+
+sum = add(num1, num2, 4, 5, 6);
 ```
 
 <!-- Answer -->
@@ -363,12 +377,12 @@ function test(a) {
   let num1 = 21;
   return add(a, num1);
 }
-
-let sum = test(100);
+let sum;
 
 function add(a, b) {
   return a + b;
 }
+sum = test(100);
 ```
 
 <!-- Answer -->
